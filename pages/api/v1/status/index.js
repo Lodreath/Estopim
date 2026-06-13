@@ -2,7 +2,9 @@
 // Você pode acessar este endpoint em /api/status para verificar se a API está funcionando corretamente.
 
 function status(request, response) {
-  response.status(200).send("Status ok. Alunos do curso.dev são acima da média!");
+  response
+    .status(200)
+    .send("Status ok. Alunos do curso.dev são acima da média!");
 }
 
 //O metodo send() é usado para enviar uma resposta simples, enquanto o json() é usado para enviar uma resposta em formato JSON.
@@ -12,9 +14,8 @@ function status(request, response) {
 function status2(request, response) {
   response.status(200).json({
     status: "ok",
-    message: "Alunos do curso.dev são acima da média!"
+    message: "Alunos do curso.dev são acima da média!",
   });
 }
-
 
 export default status2;
