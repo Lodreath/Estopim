@@ -67,3 +67,11 @@ sudo apt install postgresql-client
 docker compose -f infra/compose.yaml up -d
 psql --host=localhost --username=postgres --port=5432
 docker compose -f infra/compose.yaml down
+
+---
+
+/_
+
+**Instala o framework para acesso ao Postgres utilizando o Node escolhido para este projeto com o NPM:**
+Comandos Terminal:
+npm install pg@8.11.3
